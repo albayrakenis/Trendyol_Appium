@@ -15,7 +15,6 @@ public class Login {
 
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver(), Duration.ofSeconds(10)) ,this);
 
-       // PageFactory.initElements(Driver.getAppiumDriver(),this);
 
     }
 

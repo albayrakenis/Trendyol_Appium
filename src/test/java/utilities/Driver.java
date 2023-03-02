@@ -42,13 +42,9 @@ public class Driver {
             desiredCapabilities.setCapability("autoGrantPermissions", "true");
 
             if (ConfigReader.getProperty("platformName").equals("android")) {
-                //if you do not provide app path so you should provide "appPackage" and "appActivity"
-                //desiredCapabilities.setCapability("appPackage","com.gittigidiyormobil");
-                //desiredCapabilities.setCapability("appActivity","com.gittigidiyormobil.view.GGMainActivity");
                 appiumDriver = new AndroidDriver(appiumServerURL,desiredCapabilities);
                 appiumDriver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
             } else if (ConfigReader.getProperty("platformName").equals("ios")) {
-                //if you do not provide app path so you should use "bundleId"
                 desiredCapabilities.setCapability("bundleId",ConfigReader.getProperty("iosBundleId"));
                 appiumDriver = new IOSDriver(appiumServerURL,desiredCapabilities);
                 appiumDriver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);

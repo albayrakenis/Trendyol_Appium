@@ -8,7 +8,7 @@ Feature:Sepete urun ekleme
     Then kullanici mail olarak "ValidEmail" girer
     And kullanici password olarak "ValidPassword" girer
     And kullanici giris yap butonuna tiklar
-    And kullanici "<Aranacak urun>" aratır
+    And kullanici "<Aranacak urun>" aratir
     And kullanici "<Siralama>" olarak listeler
     And kullanici 1 . siradaki urunu seser ve sepete ekler
     And kullanici sepette urunun fiyatini ve kargo bedavayi kontrol eder

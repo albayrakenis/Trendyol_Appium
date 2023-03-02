@@ -27,12 +27,15 @@ public class Test01_LoginTest {
 
     @Then("kullanici mail olarak {string} girer")
     public void kullaniciMailOlarakGirer(String mail) {
+
         login.emailTextbox.sendKeys(ConfigReader.getProperty(mail));
     }
 
     @And("kullanici password olarak {string} girer")
     public void kullaniciPasswordOlarakGirer(String password) {
+
         login.passwordTextbox.sendKeys(ConfigReader.getProperty(password));
+
     }
 
 
@@ -52,6 +55,7 @@ public class Test01_LoginTest {
 
     @And("kullanici uygulamayi kapatir")
     public void kullaniciUygulamayiKapatir() {
+
         Driver.quitAppiumDriver();
     }
 }

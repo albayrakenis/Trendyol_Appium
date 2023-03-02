@@ -14,8 +14,8 @@ public class Test02_UrunuSepeteEkleme {
     Homepage homepage = new Homepage();
     UrunSayfasi urunSayfasi = new UrunSayfasi();
     SepetSayfasi sepetSayfasi = new SepetSayfasi();
-    @Then("kullanici {string} aratır")
-    public void kullanici_aratır(String aranacakKelime) {
+    @Then("kullanici {string} aratir")
+    public void kullanici_aratir(String aranacakKelime) {
         homepage.urunArama(aranacakKelime);
 
     }
