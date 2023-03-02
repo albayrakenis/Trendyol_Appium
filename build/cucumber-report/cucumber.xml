@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0"
+           failures="1"
+           name="io.cucumber.core.plugin.JUnitFormatter"
+           skipped="0"
+           tests="1"
+           time="0.353">
+   <testcase classname="Sepete urun ekleme"
+             name="Kullanici urunu sepete ekleyebilmeli"
+             time="0.024">
+      <failure message="The scenario has pending or undefined step(s)"
+               type="java.lang.Exception">Given kullanici trendyol uygulamasını acar..................................passed
+And kullanici hesabım tab ina tiklar........................................passed
+Then kullanici mail olarak "ValidEmail" girer...............................passed
+And kullanici password olarak "ValidPassword" girer.........................passed
+And kullanici giris yap butonuna tiklar.....................................passed
+And kullanici "Laptop Çantası" aratır.......................................undefined
+And kullanici "Çok Satanlar" olarak listeler................................skipped
+And kullanici 1 . siradaki urunu seçer ve sepete ekler......................skipped
+And kullanici urunu sepetten silip favorilere ekler.........................skipped
+And kullanici favorilere gidip urunu kontrol eder...........................skipped
+And kullanici uygulamayi kapatir............................................skipped
+</failure>
+   </testcase>
+</testsuite>
