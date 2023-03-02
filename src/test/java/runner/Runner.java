@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features",
         glue = "stepdefinitions",
         tags = "@favori",
-        dryRun = true
+        dryRun = false
 )
 
 

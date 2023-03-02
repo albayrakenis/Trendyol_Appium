@@ -40,7 +40,7 @@ public class Test01_LoginTest {
     public void kullaniciGirisYapButonunaTiklar() {
         login.girisYapButton.click();
         Driver.getAppiumDriver().navigate().back();
-        //homepage.touchScreen.click();
+
     }
 
     @And("kullanicinin basarili olarak giris yaptıgı test edilir")
